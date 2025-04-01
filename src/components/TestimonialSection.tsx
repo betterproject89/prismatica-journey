@@ -24,8 +24,15 @@ const testimonials = [
 
 const TestimonialSection = () => {
   return (
-    <section className="py-16 bg-muted/50">
-      <div className="container px-4 md:px-6">
+    <section className="py-16 bg-muted/20 relative">
+      <div className="absolute inset-0 opacity-20 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1527576539890-dfa815648363" 
+          alt="Background Texture" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="text-center mb-10 animate-fade-in" style={{ animationDelay: '1.1s' }}>
           <h2 className="text-3xl font-bold tracking-tight">Le opinioni di chi usa Prisma</h2>
           <p className="text-muted-foreground mt-2">
@@ -35,7 +42,7 @@ const TestimonialSection = () => {
         
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="animate-fade-in" style={{ animationDelay: `${1.2 + index * 0.1}s` }}>
+            <Card key={index} className="animate-fade-in glass-morphism border-white/10 hover:bg-white/5 transition-all" style={{ animationDelay: `${1.2 + index * 0.1}s` }}>
               <CardContent className="p-6">
                 <div className="mb-4">
                   {Array(testimonial.rating).fill(0).map((_, i) => (

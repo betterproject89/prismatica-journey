@@ -4,11 +4,11 @@ import { Download } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="border-b sticky top-0 z-40 bg-background/80 backdrop-blur-md">
+    <header className="border-b border-white/10 sticky top-0 z-40 bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-full bg-gradient-primary"></div>
-          <span className="text-xl font-bold">Prisma</span>
+          <div className="h-8 w-8 rounded-full bg-gradient-primary animate-glow"></div>
+          <span className="text-xl font-bold text-gradient">Prisma</span>
         </div>
         <div className="flex gap-4">
           <Button className="bg-gradient-primary" size="sm">

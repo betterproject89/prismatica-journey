@@ -55,7 +55,7 @@ const categories = [
 
 const CategorySection = () => {
   return (
-    <section className="py-12 bg-muted/50">
+    <section className="py-12 bg-muted/20">
       <div className="container px-4 md:px-6">
         <div className="text-center max-w-[800px] mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <h2 className="text-3xl font-bold tracking-tight mb-2">Otto aree per la tua crescita</h2>
@@ -67,10 +67,10 @@ const CategorySection = () => {
           {categories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-background p-6 rounded-lg shadow-sm border transition-all hover:shadow-md animate-fade-in"
+              className="glass-morphism p-6 rounded-lg transition-all hover:bg-white/10 animate-fade-in"
               style={{ animationDelay: `${0.5 + index * 0.1}s` }}
             >
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+              <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4 text-primary">
                 {category.icon}
               </div>
               <h3 className="font-medium mb-2">{category.title}</h3>

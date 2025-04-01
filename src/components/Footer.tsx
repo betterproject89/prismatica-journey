@@ -1,13 +1,13 @@
 
 const Footer = () => {
   return (
-    <footer className="border-t py-8 md:py-12">
+    <footer className="border-t border-white/10 py-8 md:py-12">
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="h-8 w-8 rounded-full bg-gradient-primary"></div>
-              <span className="text-xl font-bold">Prisma</span>
+              <span className="text-xl font-bold text-gradient">Prisma</span>
             </div>
             <p className="text-sm text-muted-foreground">
               La tua app per la crescita personale a 360°.
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-8 pt-8 border-t border-white/10 text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} Prisma. Tutti i diritti riservati.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-foreground">Privacy Policy</a>

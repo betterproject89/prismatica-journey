@@ -55,8 +55,15 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-16 md:py-24">
-      <div className="container px-4 md:px-6">
+    <section className="py-16 md:py-24 relative">
+      <div className="absolute inset-0 opacity-20 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb" 
+          alt="Background" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="text-center mb-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <h2 className="text-3xl font-bold tracking-tight">Cosa rende i nostri contenuti unici</h2>
           <p className="text-muted-foreground mt-4 max-w-[700px] mx-auto">
@@ -68,10 +75,10 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-start animate-fade-in"
+              className="flex flex-col items-start glass-morphism p-6 rounded-lg animate-fade-in"
               style={{ animationDelay: `${0.7 + index * 0.1}s` }}
             >
-              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+              <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mb-4 text-primary">
                 {feature.icon}
               </div>
               <h3 className="font-medium mb-2">{feature.title}</h3>
