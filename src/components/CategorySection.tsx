@@ -55,26 +55,39 @@ const categories = [
 
 const CategorySection = () => {
   return (
-    <section className="py-12 bg-muted/20">
-      <div className="container px-4 md:px-6">
-        <div className="text-center max-w-[800px] mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <h2 className="text-3xl font-bold tracking-tight mb-2">Otto aree per la tua crescita</h2>
-          <p className="text-muted-foreground">
-            Contenuti personalizzati organizzati in otto categorie per guidarti nel tuo percorso
+    <section className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-noise opacity-[0.03] mix-blend-soft-light"></div>
+      <div className="absolute -bottom-48 -right-48 w-96 h-96 bg-primary/20 rounded-full filter blur-[100px]"></div>
+      
+      <div className="container px-4 md:px-6 relative">
+        <div className="text-center max-w-[800px] mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="inline-flex items-center rounded-full px-3 py-1 text-sm frost-panel mb-4">
+            <span className="text-gradient font-medium">Categorie</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Otto aree per la tua crescita</h2>
+          <p className="text-white/70 md:text-lg max-w-[600px] mx-auto">
+            Contenuti personalizzati organizzati in otto categorie per guidarti nel tuo percorso di sviluppo personale
           </p>
         </div>
+        
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category, index) => (
             <div 
               key={index} 
-              className="glass-morphism p-6 rounded-lg transition-all hover:bg-white/10 animate-fade-in"
+              className="frost-panel relative group overflow-hidden p-6 rounded-xl transition-all hover:bg-white/5 animate-fade-in"
               style={{ animationDelay: `${0.5 + index * 0.1}s` }}
             >
-              <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4 text-primary">
-                {category.icon}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div className="relative z-10">
+                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4 text-primary/90 group-hover:text-primary transition-colors">
+                  {category.icon}
+                </div>
+                <h3 className="font-medium text-lg mb-2 group-hover:text-gradient transition duration-300">{category.title}</h3>
+                <p className="text-sm text-white/60 group-hover:text-white/70 transition-colors">{category.description}</p>
               </div>
-              <h3 className="font-medium mb-2">{category.title}</h3>
-              <p className="text-sm text-muted-foreground">{category.description}</p>
+              
+              <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-primary/50 via-secondary/50 to-accent/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </div>
           ))}
         </div>

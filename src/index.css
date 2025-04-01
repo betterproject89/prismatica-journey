@@ -77,4 +77,59 @@
   .neo-blur {
     @apply backdrop-blur-2xl bg-black/40 border border-white/10;
   }
+  
+  /* New utility classes for enhanced UI */
+  .frost-panel {
+    @apply backdrop-blur-2xl bg-white/5 border border-white/20 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.2)];
+  }
+  
+  .gradient-border {
+    @apply relative before:absolute before:-inset-[1px] before:rounded-[inherit] before:p-[1px] before:bg-gradient-to-r before:from-primary/50 before:via-secondary/50 before:to-accent/50 before:-z-10;
+  }
+  
+  .shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent;
+  }
+  
+  .glow-sm {
+    @apply shadow-[0_0_15px_rgba(139,92,246,0.3)];
+  }
+  
+  .glow-md {
+    @apply shadow-[0_0_25px_rgba(139,92,246,0.3)];
+  }
+  
+  .glow-lg {
+    @apply shadow-[0_0_35px_rgba(139,92,246,0.3)];
+  }
+  
+  .content-grid {
+    @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-4;
+  }
+  
+  .section-container {
+    @apply container px-4 md:px-6 relative z-10;
+  }
+  
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
