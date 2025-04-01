@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, Apple, LogoAndroid } from "lucide-react";
+import { Download, Apple, Smartphone } from "lucide-react";
 
 const DownloadSection = () => {
   return (
@@ -46,7 +46,7 @@ const DownloadSection = () => {
                 <Button className="frost-panel group relative overflow-hidden bg-white/10 hover:bg-white/15 border-0 h-14 pl-4 pr-6">
                   <span className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 transition-opacity"></span>
                   <span className="bg-gradient-primary p-2 rounded-full mr-3">
-                    <LogoAndroid className="h-6 w-6 text-white" />
+                    <Smartphone className="h-6 w-6 text-white" />
                   </span>
                   <div className="flex flex-col items-start">
                     <span className="text-xs text-white/70">Scarica per</span>
