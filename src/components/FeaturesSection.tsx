@@ -6,8 +6,8 @@ import {
   BookOpen,
   Repeat,
   RefreshCw,
-  Globe,
-  Layers
+  PenTool,
+  Activity
 } from "lucide-react";
 
 const features = [
@@ -42,14 +42,14 @@ const features = [
     description: "Nuovi articoli, ricerche e tecniche aggiunti ogni settimana."
   },
   {
-    icon: <Layers className="h-5 w-5" />,
-    title: "Integrazione tra aree di crescita",
-    description: "Correlazioni tra le varie tematiche per una visione olistica del benessere."
+    icon: <PenTool className="h-5 w-5" />,
+    title: "Esercizi interattivi",
+    description: "Attività pratiche che ti aiutano a mettere in pratica i concetti appresi immediatamente."
   },
   {
-    icon: <Globe className="h-5 w-5" />,
-    title: "Accessibilità e multilingua",
-    description: "Contenuti in forma scritta e audio, in diverse lingue per massima comodità."
+    icon: <Activity className="h-5 w-5" />,
+    title: "Strumenti di monitoraggio",
+    description: "Tracker personalizzati per misurare i tuoi progressi e mantenere la motivazione alta."
   }
 ];
 
