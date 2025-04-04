@@ -88,7 +88,11 @@ const DownloadSection = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-white text-center">
                         <div className="w-16 h-16 rounded-full glass-morphism glow-sm mx-auto mb-4 flex items-center justify-center">
-                          <div className="w-8 h-8 rounded-full bg-gradient-primary animate-pulse-slow"></div>
+                          <img 
+                            src="/lovable-uploads/25a537ae-428a-4f92-89ab-0d047a471fdf.png" 
+                            alt="Prisma Logo" 
+                            className="h-10 w-10 object-contain"
+                          />
                         </div>
                         <p className="text-xl font-medium">Prisma</p>
                       </div>

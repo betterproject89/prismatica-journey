@@ -6,7 +6,13 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-4">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="h-8 w-8 rounded-full bg-gradient-primary"></div>
+              <div className="h-8 w-8">
+                <img 
+                  src="/lovable-uploads/25a537ae-428a-4f92-89ab-0d047a471fdf.png" 
+                  alt="Prisma Logo" 
+                  className="h-full w-full object-contain"
+                />
+              </div>
               <span className="text-xl font-bold text-gradient">Prisma</span>
             </div>
             <p className="text-sm text-muted-foreground">

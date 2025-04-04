@@ -75,7 +75,11 @@ const HeroSection = () => {
                     <div className="relative w-20 h-20 mx-auto mb-4">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-md"></div>
                       <div className="relative w-full h-full rounded-full bg-white/10 flex items-center justify-center border border-white/20">
-                        <div className="w-10 h-10 rounded-full bg-gradient-primary"></div>
+                        <img 
+                          src="/lovable-uploads/25a537ae-428a-4f92-89ab-0d047a471fdf.png" 
+                          alt="Prisma Logo" 
+                          className="h-12 w-12 object-contain"
+                        />
                       </div>
                     </div>
                     <h3 className="text-xl font-bold mb-2">Prisma App</h3>
